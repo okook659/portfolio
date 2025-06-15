@@ -1,29 +1,90 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
     <header>
-       
+
     </header>
     <main>
-        <h2>Hello! <br> I am Laura, a fullstack developper</h2>
-        <img src="photo.jpg" alt="">
-        <div id="button-wrap">
-            <button class="button">
-                Me contacter
+        <h2 class="title">Hello! <br> I am Laura, a fullstack developper</h2>
+        <br>
+        <div id="photo">
+            <img src="photo.jpg" alt="" id="photo">
+        </div>
+
+        <a href="#contacts">
+            <button class="button">Contact me
             </button>
+        </a>
+
+        <a href="https://github.com/okook659" target="_blank">
             <button class="button">Github</button>
+        </a>
+
+        <br>
+        <h2 class="title">TECHNOLOGIES I USE</h2>
+        <div id="technologies">
+            <div id="frontend" class="technologie">
+                <h3>FRONTEND</h3>
+                <ul>
+                    <li>HTML + CSS</li>
+                    <li>JAVASCRIPT / ANGULAR + REACT</li>
+                    <li>DART / FLUTTER</li>
+                </ul>
+            </div>
+            <span></span>
+            <div id="backend" class="technologie">
+                <h3>BACKEND</h3>
+                <ul>
+                    <li>PHP / LARAVEL</li>
+                    <li>PYTHON / DJANGO + FLASK</li>
+                    <li>JAVA / SPRING </li>
+                </ul>
+            </div>
         </div>
         <br>
-        <h2>Some selected projects :</h2>
-        
+        <h2 class="title">SELECTED PROJECTS</h2>
+
+        <div id="projects">
+            <div class="project-card">
+                <h3>Gym management api</h3>
+                <br>
+                <p>Spring boot api to manage a gym including subscriptions, offers and clients</p>
+            </div>
+            <div class="project-card">
+                <h3>Water management website</h3>
+                <br>
+                <p>An informational website about the Togo's water data. Developped in Django</p>
+            </div>
+            <div class="project-card">
+                <h3>Super Crop Shop</h3>
+                <br>
+                <p>A website to manage a crop store, we can create products, clients and transactions. It is developped in Laravel 12</p>
+            </div>
+        </div>
+
+        <br>
+        <h2 class="title">CONTACT ME</h2>
+
+        <div id="contacts">
+            <form action="https://formspree.io/f/mnnvvben" method="POST">
+                <input type="text" name="name" placeholder="Your name" required>
+                <input type="email" name="email" placeholder="Your email" required>
+                <textarea name="message" placeholder="Your message" rows="5" required></textarea>
+                <button type="submit" class="button" id="submit">Send</button>
+            </form>
+        </div>
     </main>
     <footer>
 
     </footer>
 </body>
+
 </html>
